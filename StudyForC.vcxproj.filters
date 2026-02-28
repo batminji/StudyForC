@@ -18,5 +18,8 @@
     <ClCompile Include="15_3_Atomic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="15_3_Atomic_Memory_Order.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
