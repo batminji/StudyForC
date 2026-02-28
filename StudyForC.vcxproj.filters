@@ -13,19 +13,22 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\C++">
+      <UniqueIdentifier>{4d3de2e3-a0fc-4897-808b-8c454623d089}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="15_3_Atomic.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\C++</Filter>
     </ClCompile>
     <ClCompile Include="15_3_Atomic_Memory_Order.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\C++</Filter>
     </ClCompile>
     <ClCompile Include="15_3_Atomic_Memory_Order_2.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\C++</Filter>
     </ClCompile>
     <ClCompile Include="15_3_Atomic_Memory_Order_3.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\C++</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
