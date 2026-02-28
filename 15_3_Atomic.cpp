@@ -7,7 +7,11 @@ void Worker(std::atomic<int>& Counter)
 {
 	for (int i = 0; i < 10000; ++i)
 	{
-		++Counter;
+		Counter.fetch_add(1, std::memory_order_relaxed);
+		// Counter를 증가시키는 작업을
+		// 재배치하지 못하게 막을 필요가 없기 때문에
+		// std::memory_order_relaxed를 사용할 수 있다.
+		
 		// Counter는 atomic 객체이기 때문에,
 		// 뮤텍스로 보호하지 않았음에도 불구하고
 		// 정확히 계산이 된다. 
