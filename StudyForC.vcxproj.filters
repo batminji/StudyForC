@@ -30,5 +30,8 @@
     <ClCompile Include="15_3_Atomic_Memory_Order_3.cpp">
       <Filter>Source Files\C++</Filter>
     </ClCompile>
+    <ClCompile Include="15_4.cpp">
+      <Filter>Source Files\C++</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
