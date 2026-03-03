@@ -25,8 +25,14 @@ void Worker(std::promise<std::string>& p)
 
 int main()
 {
+	// std::promise
+	// 연산을 수행 후에, 돌려줄 객체의 타입을
+	// 템플릿 인자로 받는다
 	std::promise<std::string> p;
+
 	//  미래에 string 데이터를 돌려 주겠다는 약속
+	// 연산이 끝난 다음에 promise 객체는
+	// 자신이 가지고 있는 future 객체에 값을 넣어주게 된다.
 	std::future<std::string> data = p.get_future();
 
 	std::thread t (Worker, std::ref(p));
@@ -34,7 +40,13 @@ int main()
 	// 미래에 약속된 데이터를 받을 때까지 기다린다.
 	data.wait();
 
-	// wait 
+	// get 함수를 바로 호출하더라도
+	// 알아서 promise가 future에 객체를 전달할 때까지
+	// 기다린 다음에 리턴한다.
+
+	// 주의!
+	// future 객체에서 get을 호출하면 설정된 객체가 이동된다.
+	// => get을 두 번 호출하면 안된다.
 	std::cout << "받은 데이터 : " << data.get() << std::endl;
 
 	t.join();
