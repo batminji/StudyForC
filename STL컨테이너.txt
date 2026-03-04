@@ -1,0 +1,26 @@
+STL 컨테이너
+- 컨테이너는 다른 객체들을(원소) 보관하는 하나의 커다란 보관소임.
+- 클래스 템플릿의 형태로 구현되어 있음. 그래서 임의의 타입의 원소들을 컨테이너로 만들 수 있음.
+- 한 컨테이너는 한 가지 종류의 객체들만 보관할 수 있음.
+- 자신이 보관하는 원소들의 메모리를 관리함.
+- 각각의 원소에 접근할 수 있도록 멤버 함수를 제공하여 줌.
+- 원소에 접근하는 방법 2가지
+	- 직접 함수를 호출해서 접근하는 방법
+	- 반복자(iterator)을 이용해서 접근하는 방법
+
+순차 컨테이너 Sequence Container
+- vector
+- dequq
+- list
+
+컨테이너 어댑터 Container Adaptor
+- stack : LIFO
+- queue : FIFO
+- priority_queue
+
+연관 컨테이너
+- set
+- multiset
+- map
+- multimap
+- bitset

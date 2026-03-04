@@ -16,6 +16,9 @@
     <Filter Include="Source Files\C++">
       <UniqueIdentifier>{4d3de2e3-a0fc-4897-808b-8c454623d089}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\C++Reference_Containers">
+      <UniqueIdentifier>{722fb169-1d9a-4b72-b0fc-dec5cec475d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="15_3_Atomic.cpp">
@@ -33,5 +36,13 @@
     <ClCompile Include="15_4.cpp">
       <Filter>Source Files\C++</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="STL컨테이너.txt">
+      <Filter>Source Files\C++Reference_Containers</Filter>
+    </Text>
+    <Text Include="Deque.txt">
+      <Filter>Source Files\C++Reference_Containers</Filter>
+    </Text>
   </ItemGroup>
 </Project>
